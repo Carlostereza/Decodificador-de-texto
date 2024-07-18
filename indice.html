@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Decodificador e Codificador de texto">
+    <link rel="stylesheet" href="./CSS/estilos.css">
+    <title>Decodificador e Codificador de texto</title>
+</head>
+<body>
+    <header>
+        <a href="#">
+            <img src="./Imagens/logo.svg" alt="Logo Alura" class="logo">
+        </a>    
+    </header>
+    
+    <main>
+        <section class="decodificador">
+            <textarea class="texto__esquerda" placeholder="Digite seu texto aqui"></textarea>
+            <div class="exclamacao__aviso">
+                <img src="./Imagens/aviso.svg" alt="Imagem Aviso" class="img__aviso">
+                <p class="texto__aviso">Apenas letras minúsculas e sem acento</p>
+            </div>
+            <div class="btn__esquerda">
+                <button class="btn__criptografar">Criptografar</button>
+                <button class="btn__descriptografar">Descriptografar</button>
+            </div>
+        </section>
+        <section class="texto__direita">
+           <div class="posicao__boneco">
+                <img src="./Imagens/boneco.svg" alt="Imagem Boneco" class="img__boneco">
+                <p class="texto__um">Nenhuma mensagem encontrada</p>
+                <p class="texto__dois">Digite um texto que você deseja Criptografar ou Descriptografar</p>
+           </div>
+           <textarea class="resposta" readonly></textarea>
+           <button class="btn__copiar">Copiar</button>
+         </section>  
+    </main>
+   
+    <footer class="rodape">
+        <p>Decodificador / Codificador - Desafio Alura</p>
+    </footer>
+
+    <script src="./js/encriptador.js"></script>
+</body>
+</html>
